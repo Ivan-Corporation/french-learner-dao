@@ -275,6 +275,8 @@ function App() {
   const claimStake = async () =>
     runTx(() => contract!.claimStake(), "Claiming stake");
 
+  console.log('signer', signer)
+
   return (
     <div className="app">
       <Toaster />
