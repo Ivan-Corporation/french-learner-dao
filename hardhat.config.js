@@ -12,5 +12,13 @@ const config = {
   etherscan: {
     apiKey: process.env.ETHERSCAN_KEY,
   },
+  paths: {
+    tests: "./test",
+  },
+  typechain: {
+    outDir: "typechain-types",
+    target: "ethers-v6",
+  },
 };
+
 export default config;

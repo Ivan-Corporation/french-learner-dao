@@ -18,7 +18,6 @@ contract FrenchLearner {
 
     /// @notice One-time faucet claim flag per address
     mapping(address => bool) public claimedFaucet;
-
     struct Stake {
         uint256 amount;
         uint256 startTime;
@@ -169,7 +168,6 @@ contract FrenchLearner {
         s.active = false;
         s.amount = 0;
         s.startTime = 0;
-
         // Determine success by current streak at claim time
         if (streak[user] >= 7) {
             // Success: return staked amount + reward (e.g., 150% return)
